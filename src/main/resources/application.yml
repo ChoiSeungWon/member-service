@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: member-service
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@127.0.0.1:1521:orcl
+    username: system
+    password: root
+
+
+server:
+  port: 8083
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+
